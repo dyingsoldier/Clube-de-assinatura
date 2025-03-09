@@ -1,0 +1,46 @@
+.desktop-only{
+  display: initial;
+}
+
+.smartphone-only{
+  display: none;
+}
+
+.background-hero{
+  background-image: url(../assets/images/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  height: 59.25rem;
+  max-width: 240rem;
+  margin-inline: auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.center{
+  align-items: center;
+}
+
+.grid{
+  display: grid;
+}
+
+@media (width <= 34em){
+  .desktop-only{
+    display: none;
+  }
+
+  .smartphone-only{
+    display: initial;
+  }
+
+  .background-hero{
+    background-size: cover;
+
+    height: 32rem;
+  }
+}
