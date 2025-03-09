@@ -74,6 +74,10 @@ h3{
   font-size: var(--fs-32);
 }
 
+ul[role="list"]{
+  list-style: none;
+}
+
 a{
   text-decoration: none;
   color: inherit;

@@ -1,0 +1,62 @@
+.card{
+  width: 18rem;
+  height: 26rem;
+  border-radius: 1.5rem ;
+  background-color: var(--shape-base);
+  padding-inline: 2rem;
+  padding-block: 2rem 1.75rem;
+
+  color: aliceblue;
+}
+
+.card:hover{
+  background-color: var(--shape-stroke);
+  transition-delay: 50ms;
+}
+
+
+.drentro{
+  display: flex;
+  flex-direction: column;
+
+  & h3{
+    margin-bottom: 2rem;
+    color: var(--blue-light);
+  }
+
+  & h3 + span{
+    font: var(--fw-bold) var(--fs-40) var(--ff-raleway);
+  }
+
+  & span + span{
+    margin-top: .5rem;
+    font: var(--fw-base) var(--fs-14) var(--ff-raleway);
+    color: var(--text-label);
+  }
+
+  & small{
+    font: var(--fw-bold) var(--fs-16) var(--ff-raleway);
+  }
+}
+
+.drentro-2{
+  margin-top: 4rem;
+  max-width: 14rem;
+
+  & ul{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+
+    & li{
+      font: var(--fw-base) var(--fs-12) var(--ff-raleway);
+      background: url(../assets/icons/star.svg) no-repeat;
+      background-size: .875rem;
+      padding-left: 1.5rem;
+    }
+  }
+
+  & button{
+    margin-top: 1.5rem;
+  }
+}

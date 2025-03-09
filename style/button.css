@@ -18,3 +18,24 @@
 .btn:hover{
   background-color: var(--pink-base);
 }
+
+.btn-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  width: 14rem;
+  height: 2.5rem;
+  padding-inline: 1.25rem;
+  border-radius: .5rem;
+  border: none;
+
+  background-color: var(--blue-dark);
+  color: var(--text-title);
+  font: var(--fw-bold) var(--fs-14) var(--ff-raleway);
+}
+
+.btn-2:hover{
+  background-color: var(--blue-mid);
+}
