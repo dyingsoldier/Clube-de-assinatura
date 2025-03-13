@@ -85,7 +85,7 @@ a{
   color: inherit;
 }
 
-@media (width <= 30rem){
+@media (width <= 35rem){
   :root{
   --py-56: 1.25rem;
   }

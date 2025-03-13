@@ -1,4 +1,4 @@
-.container{
+& .container{
   --max-width: 70rem;
   width: min(var(--max-width), 100% - 2.5rem * 2);
   margin-inline: auto;
@@ -38,6 +38,39 @@
       color: var(--text-body);
       text-align: center;
     }
+  }
+}
+
+& .week{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  max-width: 75rem;
+  width: 100%;
+  height: 25rem;
+  position: relative;
+
+  & p{
+    text-align: center;
+    font: var(--fw-md) var(--fs-32) var(--ff-raleway);
+    color: var(--text-tittle);
+    line-height: 2;
+    
+   & strong{
+    color: var(--blue-light);
+    }
+
+    } 
+
+    & img{
+      width: 5rem;
+      height: 5rem;
+
+      &[src*="ball"]{
+        width: 4.5rem;
+        height: 4.5rem;
+   }
   }
 }
 
