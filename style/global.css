@@ -24,7 +24,7 @@
 --shape-base: #000F1F;
 --shape-background: #00050A;
 
---text-title: #F8FBFB;
+--text-tittle: #F8FBFB;
 --text-body:  #E2E7E9;
 --text-label: #BAC6C9;
 
@@ -43,6 +43,8 @@
 --fs-10: .625rem;
 
 --ff-raleway: "Raleway", sans-serif;
+
+--py-56: 3.5rem;
 }
 
 body{
@@ -81,4 +83,10 @@ ul[role="list"]{
 a{
   text-decoration: none;
   color: inherit;
+}
+
+@media (width <= 30rem){
+  :root{
+  --py-56: 1.25rem;
+  }
 }

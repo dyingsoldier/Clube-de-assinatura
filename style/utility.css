@@ -2,8 +2,12 @@
   display: initial;
 }
 
-.smartphone-only{
+.mobile-only{
   display: none;
+}
+
+.py-56{
+  padding-top: 3.5rem;
 }
 
 .background-hero{
@@ -29,18 +33,17 @@
   display: grid;
 }
 
-@media (width <= 34em){
+@media (width <= 35rem){
   .desktop-only{
     display: none;
   }
 
-  .smartphone-only{
+  .mobile-only{
     display: initial;
   }
 
   .background-hero{
     background-size: cover;
-
     height: 32rem;
   }
 }

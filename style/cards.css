@@ -15,7 +15,7 @@
 }
 
 
-.drentro{
+.card-top{
   display: flex;
   flex-direction: column;
 
@@ -39,7 +39,7 @@
   }
 }
 
-.drentro-2{
+.card-bottom{
   margin-top: 4rem;
   max-width: 14rem;
 
