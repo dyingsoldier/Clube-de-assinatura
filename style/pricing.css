@@ -1,0 +1,23 @@
+& section.pricing{
+  --max-width: 70rem;
+  width: min(var(--max-width), 100% - 2.5rem * 2);
+  margin-inline: auto;
+  width: 90rem;
+  height: auto;
+
+
+  & > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  & > h2{
+    font: var(--fw-bold) var(--fs-32) var(--ff-raleway);
+    color: var(--text-tittle); 
+    text-align: center;
+    margin-top: 12rem;
+    margin-bottom: 3.5rem;
+  }
+}

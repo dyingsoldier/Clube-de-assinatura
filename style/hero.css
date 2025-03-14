@@ -46,16 +46,23 @@
   align-items: center;
   justify-content: center;
   margin-inline: auto;
-  max-width: 75rem;
   width: 100%;
+  max-width: 75rem;
   height: 25rem;
-  position: relative;
+  overflow: hidden;
+  margin-top: 6rem;
+  /* border: solid 2px yellow; */
+
+  & .content{
+    /* border: 2px solid green; */
+    width: 100%;
+    position: relative;
+  }
 
   & p{
     text-align: center;
     font: var(--fw-md) var(--fs-32) var(--ff-raleway);
     color: var(--text-tittle);
-    line-height: 2;
     
    & strong{
     color: var(--blue-light);
@@ -64,13 +71,52 @@
     } 
 
     & img{
-      width: 5rem;
-      height: 5rem;
+      width: 100%;
+      position: absolute;
 
+      &[src*="spellbook"]{
+      width: 5.5rem;
+      height: 5.5rem;
+      bottom: 10rem;
+      left: 33.5rem;
+
+      transform: rotate(20deg);
+      transition: transform 400ms;
+
+      &:hover{
+        transform: rotate(30deg);
+        scale: 1.1;
+      }
+    }
+      
+      &[src*="ouija"]{
+        width: 5rem;
+        height: 5rem;
+        left: 3rem;
+
+        transform: rotate(90deg);
+        transition: scale 400ms;
+
+        &:hover{
+          transform: rotate(110deg);
+          scale: 1.1;
+        }
+      }
+      
       &[src*="ball"]{
         width: 4.5rem;
         height: 4.5rem;
-   }
+        right: .5rem;
+
+        transform: rotate(-15deg);
+        transition: scale 400ms;
+
+        &:hover{
+          transform: rotate(-5deg);
+          scale: 1.1;
+        }
+      }
+
   }
 }
 

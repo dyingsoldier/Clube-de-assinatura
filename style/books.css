@@ -1,0 +1,37 @@
+& section.books{
+  --max-width: 70rem;
+  width: min(var(--max-width), 100% - 2.5rem * 2);
+  
+  margin-inline: auto;
+  max-width: 87.5rem;
+  height: auto;
+  text-align: center;
+
+  & .books-tittle{
+    margin-top: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+  }
+
+ & h2{
+  font: var(--fw-bold) var(--fs-32) var(--ff-raleway) ;
+  color: var(--text-tittle);
+  line-height: auto;
+ }
+
+ & p{
+  font: var(--fw-base) var(--fs-16) var(--ff-raleway);
+  color: var(--text-body);
+  text-align: center;
+ }
+
+ & .book-kit{
+  margin-top: 8rem;
+   & img{
+    width: 29rem;
+    height: 38rem;
+    }
+ }
+}

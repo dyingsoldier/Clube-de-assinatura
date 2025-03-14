@@ -29,7 +29,7 @@
 --text-label: #BAC6C9;
 
 --fw-bold: 700;
---fw-medium: 500;
+--fw-md: 500;
 --fw-base: 400;
 
 --fs-48: 3rem;
@@ -47,15 +47,15 @@
 --py-56: 3.5rem;
 }
 
-body{
-  background-color: var(--shape-background);
-}
-
 html{
   font: var(--fw-medium) var(--fs-16) var(--ff-raleway);
 
   overflow-x: hidden;
   scrollbar-width: hidden;
+}
+
+body{
+  background-color: var(--shape-background);
 }
 
 h1, h2, h3{
@@ -74,6 +74,10 @@ h2{
 
 h3{
   font-size: var(--fs-32);
+}
+
+li{
+  list-style: none;
 }
 
 ul[role="list"]{
