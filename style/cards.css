@@ -1,12 +1,13 @@
 .card{
-  width: 18rem;
-  height: 26rem;
+  width: 100%;
+  max-width: 18rem;
+
   border-radius: 1.5rem ;
   background-color: var(--shape-base);
   padding-inline: 2rem;
   padding-block: 2rem 1.75rem;
 
-  color: aliceblue;
+  color: var(--text-tittle);
 }
 
 .card:hover{
@@ -49,6 +50,8 @@
     gap: .75rem;
 
     & li{
+      width: 14rem;
+      height: auto;
       font: var(--fw-base) var(--fs-12) var(--ff-raleway);
       background: url(../assets/icons/star.svg) no-repeat;
       background-size: .875rem;

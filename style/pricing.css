@@ -1,11 +1,8 @@
 & section.pricing{
-  --max-width: 70rem;
-  width: min(var(--max-width), 100% - 2.5rem * 2);
+  width: 100%;
+  max-width: 240rem;
   margin-inline: auto;
-  width: 90rem;
-  height: auto;
-
-
+  
   & > div{
     display: flex;
     align-items: center;
@@ -19,5 +16,22 @@
     text-align: center;
     margin-top: 12rem;
     margin-bottom: 3.5rem;
+  }
+
+  & .card:nth-child(2){
+
+    & h3{
+      color: var(--pink-light);
+    }
+    & .btn{
+      width: 100%;
+    }
+
+    & .card-bottom{
+      & li{
+        background-image: url(../assets/icons/star-purple-card.svg);
+        background-repeat: no-repeat;
+      }
+    }
   }
 }

@@ -1,74 +1,87 @@
 & footer{
-  --max-width: 70rem;
-  width: min(var(--max-width), 100% - 2.5rem * 2);
-
-  padding-inline: 10rem;
-  padding-block: 10rem;
-  margin-inline: auto;
-
-  
   width: 100%;
   max-width: 240rem;
+  margin-inline: auto;
   height: 25rem;
   
-  justify-content: space-between;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   
   background-image: url(../assets/images/book-trace-background.png);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   margin-top: 18rem;
+} 
+
+& .nav-left{
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
   
-  & .nav-left{
+  & img[src*="horizontal"]{
+    width: 16rem;
+    height: 4rem;
+  }
+  
+  & .linha{
+    border: 1px solid var(--shape-stroke);
+    width: 100%;
+    margin-block: .75rem;
+  }
+  
+  & .social-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    & img{
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  
+}
+
+& .nav-right{
+  margin-inline: auto;
+  flex-direction: row;
+  padding-top: .5rem;
+
+  & nav {
     margin-inline: auto;
     display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+
+  & div:nth-child(1){
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
-    & img[src*="horizontal"]{
-      width: 16rem;
-      height: 4rem;
-    }
-
-    & .linha{
-      border: 1px solid var(--shape-stroke);
-      width: 100%;
-      margin-block: .75rem;
-    }
-
-    & .social-icons{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      & img{
-        width: 1.5rem;
-        height: 1.5rem;
-      }
-    }
-
+    gap: .75rem;
   }
 
-  & .nav-right{
-    margin-inline: auto;
+  & div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .75rem;
   }
-  
 
-    & nav {
-    &  h2{
-        color: white;
-        font: var(--fw-bold) var(--fs-16) var(--ff-raleway);
-      }
-
-    & ul{
-      font: var(--fw-md) var(--fs-14) var(--ff-raleway);
-      color: var(--blue-light);
+  &  h2{
+      color: white;
+      font: var(--fw-bold) var(--fs-16) var(--ff-raleway);
+      margin-bottom: 1.25rem;
     }
-  }
 
-  & nav.links{
-    & a{
-      display: flex;
-    }
+  & span{
+    font: var(--fw-md) var(--fs-14) var(--ff-raleway);
+    color: var(--blue-light);
   }
-
 }
