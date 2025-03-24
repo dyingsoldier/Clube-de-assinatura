@@ -152,7 +152,7 @@
   }
 
   & .week{
-    max-width: 23.4375rem;
+    max-width: 28.125rem;
     max-height: 15.6875rem;
 
     margin-top: 2rem;
@@ -180,9 +180,9 @@
       width: 2.5rem;
       height: 2.5rem;
       bottom: 6rem;
-      left: 16rem;
+      left: 17rem;
 
-      transform: rotate(10deg);
+      transform: rotate(15deg);
       transition: transform 400ms;
 
       &:hover{
@@ -194,12 +194,12 @@
       &[src*="ouija"]{
         width: 2rem;
         height: 2rem;
-        left: 1rem;
-        top: 5rem;
+        left: 2.5rem;
+        top: 5.1rem;
         
 
         transform: rotate(-30deg);
-        transition: scale 400ms;
+        transition: none;
 
         &:hover{
           transform: none;
@@ -210,8 +210,8 @@
       &[src*="ball"]{
         width: 2.5rem;
         height: 2.5rem;
-        left: 19rem;
-        bottom: -3rem;
+        right: 2.5rem;
+        bottom: -2rem;
 
         transform: rotate(15deg);
         transition: scale 400ms;
