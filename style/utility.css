@@ -33,7 +33,7 @@
   display: grid;
 }
 
-@media (width <= 35rem){
+@media (width <= 26.875rem){
   .desktop-only{
     display: none;
   }
@@ -44,6 +44,6 @@
 
   .background-hero{
     height: 34rem;
-    max-width: 35rem;
+    max-width: 26.875rem;
   }
 }

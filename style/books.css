@@ -5,7 +5,7 @@
   text-align: center;
 
   & .books-tittle{
-    margin-top: 14rem;
+    margin-top: 14.6875rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,17 +25,21 @@
  }
 
  & .book-kit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-top: 8rem;
    & img{
-    width: 29rem;
-    height: 38rem;
+    width: 29.1875rem;
+    height: 38.5625rem;
     }
  }
 }
 
-@media (width <= 35rem){
+@media (width <= 26.875rem){
   & section.books{
-    max-width: 25rem;
+    max-width: 23.4375rem;
 
     & h2{
       font: var(--fw-bold) var(--fs-24) var(--ff-raleway);
@@ -47,24 +51,22 @@
       font: var(--fw-base) var(--fs-14) var(--ff-raleway);
       color: var(--text-body);
       text-align: center;
+      margin-bottom: 4rem;
      }
 
-
      & .books-tittle{
-      margin-top: 6.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 22rem;
-      max-width: 22rem;
+      margin-top: 5.0625rem;
       img{
         width: 3rem;
         height: 3rem;
       }
      }
 
-    & .book-kit{
-      margin-top: 4.1875rem;
+    & .book-kit{  
+      max-width: 23.4375rem;
+      max-height: 19.9375rem;  
+      margin-top: 3.125rem;
+
        & img{
         width: 9.8244rem;
         height: 12.98rem;

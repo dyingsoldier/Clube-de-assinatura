@@ -36,7 +36,7 @@
   }
 }
 
-@media (width <= 35rem){
+@media (width <= 26.875rem){
   & section.pricing{
     max-width: 51rem;
 

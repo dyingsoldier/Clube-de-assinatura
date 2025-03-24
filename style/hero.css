@@ -42,26 +42,31 @@
 }
 
 & .week{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 6rem;
   margin-bottom: 5rem;
 
-  display: flex;
   align-items: center;
-  justify-content: center;
   margin-inline: auto;
-  /* padding-block: auto; */
+
   width: 100%;
-  max-width: 75rem;
+  max-width: 1440px;
   height: 25rem;
   overflow: hidden;
   /* margin-top: 6rem; */
   /* border: solid 2px yellow; */
-
+  position: relative;
+  
   & .content{
+    display: flex;
+    align-items: center;
     justify-items: center;
     /* border: 2px solid green; */
-    width: 100%;
-    position: relative;
+    
+    width: 75rem;
+    height: 25rem;
   }
 
   & p{
@@ -82,8 +87,8 @@
       &[src*="spellbook"]{
       width: 5.5rem;
       height: 5.5rem;
-      bottom: 8rem;
-      left: 33.5rem;
+      top: 2rem;
+      right: 47.8%;
 
       transform: rotate(20deg);
       transition: transform 400ms;
@@ -97,10 +102,11 @@
       &[src*="ouija"]{
         width: 5rem;
         height: 5rem;
-        left: 3rem;
+        left: 5rem;
+        top: 17rem;
 
-        transform: rotate(90deg);
-        transition: scale 400ms;
+        transform: rotate(100deg);
+        transition: transform 400ms;
 
         &:hover{
           transform: rotate(110deg);
@@ -111,10 +117,11 @@
       &[src*="ball"]{
         width: 4.5rem;
         height: 4.5rem;
-        right: .5rem;
+        right: 3rem;
+        bottom: 3rem; 
 
         transform: rotate(-15deg);
-        transition: scale 400ms;
+        transition: transform 400ms;
 
         &:hover{
           transform: rotate(-5deg);
@@ -125,13 +132,19 @@
   }
 }
 
-@media (width <= 35rem){
+@media (width <= 26.875rem){
   & .container{
     --max-width: 70rem;
     width: min(var(--max-width), 100% - 2.5rem * 2);
     margin-inline: auto;
   }
   & header{
+    & nav{
+      img[src*="logo-symbol"]{
+        width: 4.0344rem;
+        height: 3rem;
+      }
+    }
     & .tittle{
       margin-top: 3rem;
       
@@ -152,13 +165,21 @@
   }
 
   & .week{
-    max-width: 28.125rem;
+    max-width: 23.4375rem;
     max-height: 15.6875rem;
-
     margin-top: 2rem;
     margin-bottom: inherit;
 
-& .content{
+    position: relative;
+ 
+  & .content{
+  width: 23.4375rem;
+  height: 15.6875rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
     & p{
       font: var(--fw-md) var(--fs-16) var(--ff-raleway);
       color: var(--text-body);
@@ -177,10 +198,10 @@
       position: absolute;
 
       &[src*="spellbook"]{
-      width: 2.5rem;
-      height: 2.5rem;
-      bottom: 6rem;
-      left: 17rem;
+      width: 40px;
+      height: 40px;
+
+      right: 5rem;
 
       transform: rotate(15deg);
       transition: transform 400ms;
@@ -192,11 +213,11 @@
     }
       
       &[src*="ouija"]{
-        width: 2rem;
-        height: 2rem;
-        left: 2.5rem;
-        top: 5.1rem;
-        
+        width: 32px;
+        height: 32px;
+
+        top: 10rem;
+        left: 1rem;
 
         transform: rotate(-30deg);
         transition: none;
@@ -208,10 +229,10 @@
       }
       
       &[src*="ball"]{
-        width: 2.5rem;
-        height: 2.5rem;
-        right: 2.5rem;
-        bottom: -2rem;
+        width: 40px;
+        height: 40px;
+        bottom: 2.4rem;
+        right: 1.5rem;
 
         transform: rotate(15deg);
         transition: scale 400ms;
@@ -221,7 +242,6 @@
           scale: none;
         }
       }
-
     }
   }
 }
