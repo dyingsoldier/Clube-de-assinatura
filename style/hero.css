@@ -59,7 +59,7 @@
 
   & .content{
     justify-items: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 100%;
     position: relative;
   }
@@ -127,7 +127,7 @@
 
 @media (width <= 35rem){
   & .container{
-    --max-width: 35rem;
+    --max-width: 70rem;
     width: min(var(--max-width), 100% - 2.5rem * 2);
     margin-inline: auto;
   }
@@ -180,7 +180,7 @@
       width: 2.5rem;
       height: 2.5rem;
       bottom: 6rem;
-      left: 14.5rem;
+      left: 16rem;
 
       transform: rotate(10deg);
       transition: transform 400ms;
@@ -194,7 +194,7 @@
       &[src*="ouija"]{
         width: 2rem;
         height: 2rem;
-        left: 1px;
+        left: 1rem;
         top: 5rem;
         
 
@@ -210,7 +210,8 @@
       &[src*="ball"]{
         width: 2.5rem;
         height: 2.5rem;
-        left: 18rem;
+        left: 19rem;
+        bottom: -3rem;
 
         transform: rotate(15deg);
         transition: scale 400ms;

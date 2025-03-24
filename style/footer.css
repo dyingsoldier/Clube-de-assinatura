@@ -85,3 +85,14 @@
     color: var(--blue-light);
   }
 }
+
+
+@media (width <= 35rem) {
+  & footer{
+    max-width: 40rem;
+    height: 25.9375rem;
+
+    margin-top: 6.5rem;
+
+  }
+}

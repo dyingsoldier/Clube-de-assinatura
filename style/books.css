@@ -1,7 +1,4 @@
 & section.books{
-  --max-width: 70rem;
-  width: min(var(--max-width), 100% - 2.5rem * 2);
-  
   margin-inline: auto;
   max-width: 87.5rem;
   height: auto;
@@ -34,4 +31,44 @@
     height: 38rem;
     }
  }
+}
+
+@media (width <= 35rem){
+  & section.books{
+    max-width: 25rem;
+
+    & h2{
+      font: var(--fw-bold) var(--fs-24) var(--ff-raleway);
+      color: var(--text-tittle);
+      line-height: auto;
+     }
+
+     & p{
+      font: var(--fw-base) var(--fs-14) var(--ff-raleway);
+      color: var(--text-body);
+      text-align: center;
+     }
+
+
+     & .books-tittle{
+      margin-top: 6.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 22rem;
+      max-width: 22rem;
+      img{
+        width: 3rem;
+        height: 3rem;
+      }
+     }
+
+    & .book-kit{
+      margin-top: 8rem;
+       & img{
+        width: 9.8244rem;
+        height: 12.98rem;
+        }
+     }
+  }
 }

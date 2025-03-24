@@ -43,8 +43,7 @@
   }
 
   .background-hero{
-    background-size: cover;
-    height: 32rem;
+    height: 29rem;
     max-width: 35rem;
   }
 }
