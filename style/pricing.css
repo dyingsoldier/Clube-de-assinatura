@@ -5,9 +5,7 @@
   
   & > div{
     display: flex;
-    /* align-items: center; */
-    justify-content: flex-start;
-    margin-left: 4rem;
+    justify-content: center;
     gap: 1rem;
   }
 
@@ -38,11 +36,17 @@
 }
 
 @media (width <= 26.875rem){
-  html{
-    overflow-x: inherit;
-  }
   & section.pricing{
-    max-width: 51rem;
+    
+    & > div{
+      overflow-x: auto;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+      white-space: wrap;
+      justify-content: flex-start;
+      align-items: inherit;
+      padding-left: 4rem;
+    }
 
     & > h2{
       margin-top: 6.5rem;
