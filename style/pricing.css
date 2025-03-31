@@ -5,8 +5,9 @@
   
   & > div{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    justify-content: flex-start;
+    margin-left: 4rem;
     gap: 1rem;
   }
 
@@ -37,12 +38,16 @@
 }
 
 @media (width <= 26.875rem){
+  html{
+    overflow-x: inherit;
+  }
   & section.pricing{
     max-width: 51rem;
 
     & > h2{
       margin-top: 6.5rem;
       margin-bottom: 3rem;
+      margin-inline: auto;
     }
   }
 }

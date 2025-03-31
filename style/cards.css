@@ -65,5 +65,7 @@
 }
 
 @media (width <= 26.875rem){
-  
+  .card{
+    max-width: 17rem;
+  }
 }
