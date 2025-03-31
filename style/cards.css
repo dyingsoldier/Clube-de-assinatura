@@ -68,4 +68,12 @@
   .card{
     max-width: 17rem;
   }
+  .card:hover{
+    background-color: var(--shape-base);
+  }
+
+  .card:active{
+    background-color: var(--shape-stroke);
+    transition-delay: 50ms;
+  }
 }
