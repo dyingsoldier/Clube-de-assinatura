@@ -7,14 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
-  /* justify-content: space-between; */
 
   background-image: url(../assets/images/book-trace-background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
-  /* margin-top: 18rem; */
 }
 
 & .nav-left {
@@ -94,8 +90,10 @@
   & footer {
     flex-direction: column;
     max-width: 26.875rem;
+    height: auto;
+    gap: 2.5rem;
     /* margin-bottom: 20rem; */
-    height: 25.9375rem;
+    /* height: 25.9375rem; */
 
     background-image: url(../assets/images/fundo-mobile.png);
     background-size: cover;
@@ -121,7 +119,7 @@
     }
 
     & .nav-right {
-
+      padding-bottom: 2.375rem;
       span{
         font: var(--fw-md) var(--fs-14) var(--ff-raleway);
       }
