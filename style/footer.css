@@ -6,6 +6,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2.5rem;
   /* justify-content: space-between; */
 
@@ -13,7 +14,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center; */
-  margin-top: 18rem;
+  /* margin-top: 18rem; */
 }
 
 & .nav-left {
@@ -56,6 +57,8 @@
   & nav {
     margin-inline: auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: row;
     gap: 3.5rem;
   }
@@ -91,6 +94,8 @@
   & footer {
     flex-direction: column;
     max-width: 26.875rem;
+    /* margin-bottom: 20rem; */
+    height: 25.9375rem;
 
     background-image: url(../assets/images/fundo-mobile.png);
     background-size: cover;
@@ -116,8 +121,13 @@
     }
 
     & .nav-right {
+
+      span{
+        font: var(--fw-md) var(--fs-14) var(--ff-raleway);
+      }
       & nav {
         gap: 2rem;
+        margin-bottom: 2.375rem;
       }
     }
   }
